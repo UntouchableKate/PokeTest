@@ -1,0 +1,150 @@
+
+
+.homePage-title-wrapper{
+    position: relative; 
+    margin: 0 0 4rem 1rem;
+}
+
+.homePage-title--blue{
+    color: $blue;
+    font-size: 3em;
+}
+
+.homePage-title--blue::after{
+    content: "Pokemon";
+    position: absolute;
+    top: 0;
+    left: -4px;
+    z-index: 2;
+    color: $yellow;
+}
+
+.homePage-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.homePage-list__item{
+    width: 7rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #fff;
+    color:$blue;
+    font-weight: 500;
+    border: 1px solid $yellow;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+}
+
+.homePage-list__item:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.homePage-list li:last-of-type{
+    margin-bottom: 0;
+}
+
+.homePage-list__content{
+    margin: 0;
+    text-transform: capitalize;
+}
+
+@media (min-width: 414px){
+    .homePage-title-wrapper{
+        margin-left: 1.7rem;
+    }
+
+    .homePage-list__item {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 422px){
+    .homePage-list__item:nth-child(odd) {
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 486px){
+    .homePage-list__item{
+        margin-right: 2rem;
+    }
+
+    .homePage-list__item:nth-child(3n+3){
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 632px){
+    .homePage-list{
+        justify-content: space-between;
+    }
+
+    .homePage-list__item{
+        margin-right: 2.5rem;
+    }
+
+    .homePage-list__item:nth-child(odd) {
+        margin-right: 2.5rem;
+    }
+
+    .homePage-list__item:nth-child(3n+3){
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 656px){
+    .homePage-list__item{
+        margin-right: 2.5rem !important;
+    }
+}
+
+@media (min-width: 951px){
+    .app-wrapper {
+        margin: 0 15%;
+
+    }
+}
+
+@media (min-width: 1200px){
+    .app-wrapper {
+        margin: 0 15%;
+    }
+
+    .homePage-title-wrapper{
+        margin-bottom: 7rem;
+    }
+
+    .homePage-list__item{
+        width: 10rem;
+        height: 6rem;
+    }
+}
+
+@media (min-width: 1400px){
+    .app-wrapper {
+        margin: 0 18%;
+    }
+}
+
+@media (min-width: 1890px){
+    .app-wrapper {
+        margin: 0 23%;
+    }
+}
+
+@media (min-width: 2245px){
+    .app-wrapper {
+        margin: 0 26%;
+    }
+}
